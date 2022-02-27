@@ -51,32 +51,3 @@ variable "desired_capacity" {
     description = ""
   
 }
-variable "on_demand_base_capacity" {
-    type = number
-    description = ""
-}
-
-variable "on_demand_percentage_above_base_capacity" {
-    type = number
-    description = ""
-}
-
-variable "spot_allocation_strategy" {
-    type = string
-    description = ""
-}
-
-variable "spot_instance_pools" {
-    type = number
-    description = ""
-}
-
-variable "override_type_1" {
-    type = string
-    description = "Specify instance type for asg (t2.micro, etc)"
-}
-
-variable "weighted_capacity_1" {
-    type = string
-    description = "Specify instance type for asg (t2.micro, etc)"
-}

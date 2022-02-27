@@ -17,37 +17,25 @@ resource "aws_launch_template" "example" {
   instance_initiated_shutdown_behavior = "terminate"
   key_name = var.key_name // !!  
   instance_type = "t2.micro"
-  # network_interfaces {
-  #   associate_public_ip_address = true
-  #   security_groups = var.security_groups
-  # }
   user_data = filebase64("user_data.sh")
   tag_specifications {
     resource_type = "instance"
     tags = {
-      Name = "DDoS"
+      Name = "Laurel-server"
     }
   }
   tag_specifications {
     resource_type = "volume"
     tags = {
-      Name = "DDoS"
+      Name = "Laurel-server"
     }
   }
   tag_specifications {
     resource_type = "network-interface"
     tags = {
-      Name = "DDoS"
+      Name = "Laurel-server"
     }
   }
-  // block_device_mappings {
-  //   device_name = "/dev/sda1"
-  //   ebs {
-  //     volume_type = "gp3"
-  //     volume_size = "8"
-  //     delete_on_termination = "true"
-  //   }
-  // }
 }
 
 resource "aws_autoscaling_group" "example" {
