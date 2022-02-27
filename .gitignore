@@ -1,0 +1,6 @@
+**/tf-test/.terraform
+/tf-test/.terraform.lock*
+
+.terraform
+.terraform.lock*
+.terraform.tfstate
