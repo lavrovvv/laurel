@@ -26,8 +26,3 @@
 1. terraform init
 2. terraform plan -var-file=ireland.tfvars
 3. terraform apply -var-file=ireland.tfvars
-
-# Що у планах?
-1. Більше регіонів
-2. Запуск DDoS reaper паралельно з bombardier докер контейнером
-3. Інтеграція з OpenVPN
