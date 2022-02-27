@@ -4,10 +4,10 @@ ami_id = "ami-0bf84c42e04519c85"
 
 // Set-up Auto Scaling Group
 asg_name = "DDoS-scale"
-desired_capacity = 0
+desired_capacity = 4
 vpc_zone = []
 min_size = 0
-max_size = 4
+max_size = 32
 
 
 // Set-up launch configuration
