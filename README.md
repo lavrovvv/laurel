@@ -11,6 +11,7 @@
 
 Скрипт автоматичний, і не потребує перезапуску.
 
+# Розгорнутий гайд знаходиться тут https://docs.google.com/document/d/14HZdBgPrOUtd7nWVrukxpRtu4QIx1Lzg0uKPum_98oU/edit?usp=sharing
 # Що для цього потрібно?
 1. Аккаунт на Amazon AWS
 2. Встановлений terraform (працює на Windows/Linux/MacOS)
@@ -23,11 +24,7 @@
 2. terraform plan -var-file=ireland.tfvars
 3. terraform apply -var-file=ireland.tfvars
 
-# Як перевірити що все працює?
-У вікні EC2 відкрити вкладку Instances, законектитись на один з них і перевірити статус у файлі log.txt, який знаходиться у /home/ec2-user/log.txt
-
 # Що у планах?
-1. Розгорнутий гайд з картинками
-2. Більше регіонів
-3. Запуск DDoS reaper паралельно з bombardier докер контейнером
-4. Інтеграція з OpenVPN
+1. Більше регіонів
+2. Запуск DDoS reaper паралельно з bombardier докер контейнером
+3. Інтеграція з OpenVPN
