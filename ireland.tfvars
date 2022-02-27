@@ -12,7 +12,7 @@ max_size = 4
 
 // Set-up launch configuration
 lc_name = "DDoS-lc"
-key_name = ""
+key_name = "123"
 
 // Set-up mixed ASG
 on_demand_base_capacity                  = 4
