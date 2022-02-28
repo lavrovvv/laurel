@@ -9,6 +9,7 @@ terraform {
 
 provider "aws" {
   region = var.region
+  profile = var.profile
 }
 
 resource "aws_launch_template" "example" {
