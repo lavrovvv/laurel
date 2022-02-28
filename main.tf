@@ -9,6 +9,7 @@ terraform {
 
 provider "aws" {
   region = var.region
+  profile = var.profile
 }
 
 resource "aws_launch_template" "example" {
@@ -17,7 +18,7 @@ resource "aws_launch_template" "example" {
   instance_initiated_shutdown_behavior = "terminate"
   key_name = var.key_name // !!  
   instance_type = "t2.micro"
-  user_data = filebase64("user_data.sh")
+  user_data = filebase64("user_data_MHDDoS.sh")
   tag_specifications {
     resource_type = "instance"
     tags = {
