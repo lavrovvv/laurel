@@ -1,5 +1,5 @@
 # Security test auto-scale group for EC2 based on Terraform
-
+test
 Працює на Amazon EC2. Рекомендується для користування **ЛИШЕ** тим хто знає що таке AWS і Terraform.
 # Дісклеймер
 ЦЕ ПРОГРАМНЕ ЗАБЕЗПЕЧЕННЯ НАДАЄТЬСЯ ЛИШЕ ДЛЯ НАВЧАЛЬНОГО ВИКОРИСТАННЯ! 
